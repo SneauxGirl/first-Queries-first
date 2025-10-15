@@ -1,0 +1,149 @@
+body, html {
+    padding: 0;
+    margin:0;
+    font-family: 'Lucida Sans', sans-serif;
+}
+/* HEADER */
+.header {
+    width: 100%;
+    background: linear-gradient(90deg, #06165f 0%, #3c00bc 100%)
+}
+
+.header__inner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+@media screen and (min-width: 355px) {
+    .header__inner {
+        justify-content: space-between;
+        padding: 0 20px;
+    }
+}
+
+.header__logo {
+    color: white;
+}
+
+@media screen and (min-width: 355px) {
+    .header__logo {
+        padding: 0 20px;
+    }
+}
+
+.header__button {
+padding: 5px;
+border-radius: 20px;
+border: 0;
+}
+
+.header__button:hover {
+    cursor: pointer;
+    opacity: 0.75;
+}
+
+.header_btnGrp {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    gap: .5rem;
+
+}
+.header__btnGrp--submit {
+background: orange;
+}
+
+.header__btnGrp--signIn {
+    background: #00b719;
+    color: white;
+}
+
+/* MAIN */
+.maincontainer {
+    margin: auto;
+    text-align: center;
+}
+
+/* SEARCH */
+.search__wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+.search {
+    display: flex;  
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 20px;
+    background: #e8eaf6
+}
+
+.searchTitle {
+    margin-bottom: 20px;
+}
+
+.search__input {
+    padding: 10px 60px 10px 20px;
+    border-radius: 25px;
+    width: 80%;
+    max-width: 800px;
+    margin-right: 20px;
+    border: 1px solid lightgray;
+}
+.search__searchIcon {
+    position: absolute;
+    top: 5%;
+    right: 20px;
+}
+
+/* FAQ */
+
+.faq {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 80px auto;
+    max-width: 1200px;
+}
+.faq__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    list-style-type: none;
+}
+.faq__list--item {
+    min-height: 8rem;
+    border-radius: 5px;
+    width: 300px;
+    gap: 2rem;
+    padding: 20px;
+    border: 1px solid #ccc;
+
+}
+
+/* FOOTER */
+.footer {
+    padding: 20px;
+    background: linear-gradient(90deg, #182848 0%, #3c00bc 0%);
+}
+
+.footer__content {
+    display: flex;
+    flex-wrap: flex;
+    gap: 2rem;
+    justify-content: space-between;
+    max-width: 1200px;
+    width: 100%;
+    color: white
+}
+.footer__column {
+    flex-grow: 1;
+}
