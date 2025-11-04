@@ -132,6 +132,7 @@ background: orange;
     justify-content: center;
     gap: 20px;
     list-style-type: none;
+    padding-left: 0;
 }
 .faq__list--item {
     min-height: 8rem;
@@ -144,6 +145,7 @@ background: orange;
 }
 
 /* FOOTER */
+/* rewrite as lists and rework flex for better visibility on smaller screens */
 .footer {
     padding: 20px;
     background: linear-gradient(90deg, #182848 0%, #3c00bc 0%);
@@ -151,13 +153,14 @@ background: orange;
 
 .footer__content {
     display: flex;
-    flex-wrap: flex;
+    flex-wrap: wrap;
     gap: 2rem;
     justify-content: space-between;
     max-width: 1200px;
     width: 100%;
     color: white
 }
+
 .footer__column {
     flex-grow: 1;
 }
