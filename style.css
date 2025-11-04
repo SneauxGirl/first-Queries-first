@@ -1,7 +1,10 @@
 body, html {
     padding: 0;
     margin:0;
-    font-family: 'Lucida Sans', sans-serif;
+    font-family: Lucida Sans, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 /* HEADER */
 .header {
@@ -28,6 +31,7 @@ body, html {
 
 .header__logo {
     color: white;
+    font-weight: 400;
 }
 
 @media screen and (min-width: 355px) {
@@ -37,9 +41,10 @@ body, html {
 }
 
 .header__button {
-padding: 5px;
-border-radius: 20px;
-border: 0;
+    font-size: 1rem;
+    padding: .5rem 1rem;
+    border-radius: 16px;
+    border: 0;
 }
 
 .header__button:hover {
@@ -66,43 +71,46 @@ background: orange;
 
 /* MAIN */
 .maincontainer {
-    margin: auto;
     text-align: center;
 }
 
 /* SEARCH */
+
+.hero {
+    padding: 100px 20px;
+    background-color: #e8eaf6;
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.hero__title {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
 .search__wrapper {
     position: relative;
     display: inline-block;
-}
-
-.search {
-    display: flex;  
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 100px 20px;
-    background: #e8eaf6
-}
-
-.searchTitle {
-    margin-bottom: 20px;
+    width: 40%;
+    max-width: 800px;
 }
 
 .search__input {
-    padding: 10px 60px 10px 20px;
+    padding: 10px 10px 10px 10px;
     border-radius: 25px;
-    width: 80%;
-    max-width: 800px;
-    margin-right: 20px;
-    border: 1px solid lightgray;
-}
-.search__searchIcon {
-    position: absolute;
-    top: 5%;
-    right: 20px;
+    width: 100%;
+    font-size: 1rem;
+    border: 2px solid lightgray;
 }
 
+.search__searchIcon {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0px;
+    font-size: 1rem;
+}
 /* FAQ */
 
 .faq {
