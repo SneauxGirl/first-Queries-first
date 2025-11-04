@@ -5,6 +5,7 @@ body, html {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    box-sizing: border-box;
 }
 /* HEADER */
 .header {
@@ -22,7 +23,7 @@ body, html {
     margin: auto;
 }
 
-@media screen and (min-width: 355px) {
+@media screen and (min-width: 458px) {
     .header__inner {
         justify-content: space-between;
         padding: 0 20px;
@@ -33,7 +34,6 @@ body, html {
     color: white;
     font-weight: 400;
 }
-
 @media screen and (min-width: 355px) {
     .header__logo {
         padding: 0 20px;
@@ -79,20 +79,26 @@ background: orange;
 .hero {
     padding: 100px 20px;
     background-color: #e8eaf6;
-    max-width: 1000px;
     margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
 }
 
 .hero__title {
     margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
     text-align: center;
 }
 
 .search__wrapper {
     position: relative;
     display: inline-block;
+    margin-right: 1rem;
     width: 40%;
+    min-width: 300px;
     max-width: 800px;
 }
 
