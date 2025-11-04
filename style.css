@@ -148,19 +148,31 @@ background: orange;
 /* rewrite as lists and rework flex for better visibility on smaller screens */
 .footer {
     padding: 20px;
+    margin: 0;
+    display: flex;
+    justify-content: center;
     background: linear-gradient(90deg, #182848 0%, #3c00bc 0%);
 }
 
 .footer__content {
     display: flex;
     flex-wrap: wrap;
-    gap: 2rem;
     justify-content: space-between;
-    max-width: 1200px;
+    max-width: 1000px;
     width: 100%;
     color: white
 }
 
+@media screen and (max-width: 705px) {
+    .footer__content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }   
+}
+
+@media screen and (max-width: 705px) {
 .footer__column {
-    flex-grow: 1;
+    text-align: center;
+    }
 }
